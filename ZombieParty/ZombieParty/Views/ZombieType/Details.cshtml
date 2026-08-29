@@ -4,7 +4,9 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Type: NOM DU ZOMBIETYPE</h1>
+<h1>Type: @Model.ZombieType.TypeName</h1>
+<h3>Nombre de zombies: @Model.ZombiesList.Count</h3>
+<h3>Moyenne des points: @Model.ZombiesList.Average(p => p.Point)</h3>
 
 <div class="row">
     @*  POUR CHAQUE ZOMBIE:*@
